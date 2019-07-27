@@ -3,14 +3,14 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/hello_hibernate?creatDatabaseIfNotExist=true&amp;useSSL=false.</property>
-        <property name="connection.username"></property>
-        <property name="connection.password"></property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hello_hibernate?creatDatabaseIfNotExist=true&amp;useSSL=false</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">pristijpriborF1539249f</property>
         <property name="connaction.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
         <property name="show_sql">true</property>
         <property name="connection.pool_size">20</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">validate</property>
 
         <mapping class="by.pvt.pojo.Person"/>
     </session-factory>
