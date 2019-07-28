@@ -3,7 +3,7 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/hello_hibernate?creatDatabaseIfNotExist=true&amp;useSSL=false</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hello_hibernate?createDatabaseIfNotExist=true&amp;useSSL=false</property>
         <property name="connection.username">root</property>
         <property name="connection.password">pristijpriborF1539249f</property>
         <property name="connaction.driver_class">com.mysql.jdbc.Driver</property>
