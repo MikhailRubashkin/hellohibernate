@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
 
-@Entity(name = "person")
+@Entity(name = "Person")
 public class Person implements Serializable {
 
 

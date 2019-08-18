@@ -13,5 +13,7 @@
         <property name="hibernate.hbm2ddl.auto">create</property>
 
         <mapping class="by.pvt.pojo.Person"/>
+        <mapping class="by.pvt.pojo.Employee"/>
+        <mapping class="by.pvt.pojo.EmployeeDetails"/>
     </session-factory>
 </hibernate-configuration>
