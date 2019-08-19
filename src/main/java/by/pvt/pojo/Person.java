@@ -3,9 +3,7 @@ package by.pvt.pojo;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
@@ -18,7 +16,6 @@ public class Person implements Serializable {
 
     @Id
     @GenericGenerator ( name = "id", strategy = "increment")
-
     private int id;
     @Column
     private String firstName;
@@ -28,6 +25,16 @@ public class Person implements Serializable {
     private Date dateOfBirth;
     @Column
     private char gender;
+    @OneToOne (optional=false, cascade= CascadeType.ALL)
+    private Passport passport;
+
+    public Passport getPassport (){
+        return passport;
+    }
+
+    public void setPassport ( int i ){
+        this.passport = passport;
+    }
 
     public int getId () {
         return id;

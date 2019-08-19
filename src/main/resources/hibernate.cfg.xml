@@ -15,5 +15,6 @@
         <mapping class="by.pvt.pojo.Person"/>
         <mapping class="by.pvt.pojo.Employee"/>
         <mapping class="by.pvt.pojo.EmployeeDetails"/>
+        <mapping class="by.pvt.pojo.Passport"/>
     </session-factory>
 </hibernate-configuration>
