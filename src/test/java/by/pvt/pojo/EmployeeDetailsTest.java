@@ -35,8 +35,8 @@ public class EmployeeDetailsTest {
             employeeDetails2.setEmployee(employee2);
             session.saveOrUpdate(employeeDetails2);
 
-            session.saveOrUpdate(createTestData(3));
-            session.saveOrUpdate(createTestData(5));
+            //session.saveOrUpdate(createTestData(3));
+            //session.saveOrUpdate(createTestData(5));
             tx.commit();
         } catch (Exception e) {
             e.printStackTrace();

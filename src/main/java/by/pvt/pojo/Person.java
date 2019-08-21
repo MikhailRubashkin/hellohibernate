@@ -25,7 +25,7 @@ public class Person implements Serializable {
     private Date dateOfBirth;
     @Column
     private char gender;
-    @OneToOne (optional=false, cascade= CascadeType.ALL)
+    /*@OneToOne (optional=false, cascade= CascadeType.ALL)
     private Passport passport;
 
     public Passport getPassport (){
@@ -34,7 +34,7 @@ public class Person implements Serializable {
 
     public void setPassport ( int i ){
         this.passport = passport;
-    }
+    }*/
 
     public int getId () {
         return id;

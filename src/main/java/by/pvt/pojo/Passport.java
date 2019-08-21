@@ -9,7 +9,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-@Entity(name="passport")
+/*@Entity(name="passport")
 public class Passport implements Serializable {
 
     private static final long serialVersionUID =1256L;
@@ -55,4 +55,4 @@ public class Passport implements Serializable {
     public void setId ( int id ){
         this.id = id;
     }
-}
+}*/

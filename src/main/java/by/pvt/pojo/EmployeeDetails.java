@@ -19,6 +19,10 @@ public class EmployeeDetails {
     @OneToOne
     private Employee employee;
 
+    public Long getId (){
+        return id;
+    }
+
     public String getCity (){
         return city;
     }

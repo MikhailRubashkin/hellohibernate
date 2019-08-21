@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class PassportTest {
+/*public class PassportTest {
 
     static Passport createTestPassport2(String index) {
         Passport passport = new Passport ();
@@ -83,4 +83,4 @@ public class PassportTest {
     }
 
 
-}
+}*/

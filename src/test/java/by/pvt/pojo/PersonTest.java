@@ -20,7 +20,7 @@ public class PersonTest {
         person.setLastName ("LastName");
         person.setDateOfBirth (new Date ( ));
         person.setGender ('a');
-        person.setPassport (1);
+       // person.setPassport (1);
         return person;
     }
 
