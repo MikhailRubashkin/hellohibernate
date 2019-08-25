@@ -11,6 +11,8 @@
 <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <file.encoding>UTF-8</file.encoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
 
     <dependencies>
@@ -55,6 +57,12 @@
         <version>2.5.3</version>
         <scope>test</scope>
     </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.28</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <repositories>

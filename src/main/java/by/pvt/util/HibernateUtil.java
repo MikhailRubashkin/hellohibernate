@@ -11,34 +11,33 @@ public class HibernateUtil {
 
     private SessionFactory sessionFactory;
 
-    //private static HibernateUtil ourInstance = new HibernateUtil ( );
+    private SessionFactory testSessionFactory;
 
-
-
-   /* public static HibernateUtil getInstance (){
-        return ourInstance;
-    }*/
-
-
-
-
-    private HibernateUtil (){
+    private HibernateUtil() {
         sessionFactory =
-                new MetadataSources (
-                        new StandardServiceRegistryBuilder ()
-                                .configure()
-                                .build()
-                ).buildMetadata().buildSessionFactory();
+                new MetadataSources(
+                        new StandardServiceRegistryBuilder()
+                                .configure("hibernate.cfg.xml")
+                                .build()).buildMetadata().buildSessionFactory();
+
+        testSessionFactory = new MetadataSources(
+                new StandardServiceRegistryBuilder()
+                        .configure("hibernate.cfg.test.xml")
+                        .build()).buildMetadata().buildSessionFactory();
     }
 
-    public static synchronized HibernateUtil getInstance(){
+    public static synchronized HibernateUtil getInstance() {
         if (hibernateUtil == null) {
-            hibernateUtil = new HibernateUtil ();
+            hibernateUtil = new HibernateUtil();
         }
         return hibernateUtil;
     }
 
-    public Session getSession (){
-        return sessionFactory.openSession ();
+    public Session getSession() {
+        return sessionFactory.openSession();
+    }
+
+    public Session getTestSession() {
+        return testSessionFactory.openSession();
     }
 }

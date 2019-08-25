@@ -5,12 +5,11 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
 
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class ProjectTest {
 

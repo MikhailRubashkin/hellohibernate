@@ -27,7 +27,7 @@ public class EmployeeDetailsTest {
             session.save(employee);
             EmployeeDetails employeeDetails = createTestData(1);
             employeeDetails.setEmployee(employee);
-            session.saveOrUpdate(employeeDetails);
+           // session.saveOrUpdate(employeeDetails);
 
             Employee employee2 = EmployeeTest.createTestData(1);
             session.save(employee2);
